@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jhoel Maqui">
+    <meta name="copyright" content="Jhoel Maqui" />
+    <meta name="description" content="Nuestros Productos">
+    <meta name="keywords" content="granja urbana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <title>Nuestros Productos</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-green">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="" width="55" height="40">
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">GRANJA URBANA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="SaludYMedioAmbiente.html">Salud y Medio ambiente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactoo.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchInput" placeholder="Buscar"
+                            aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 style="margin: 10px;">NUESTROS PRODUCTOS</h1>
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Productos</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-3" style="padding-left: 0; margin-left: -100px;">
+            <h3 class="widget-title">Categorías del producto</h3>
+            <ul class="product-categories" style="margin-left: -15px;">
+              <li class="cat-item cat-item-449">
+                <a href="#" class="toggle-link">Hortalizas de hoja verde</a>
+                <ul class="children" style="display: none;">
+                  <li class="cat-item cat-item-566">
+                    <a href="#">Espinacas</a>
+                  </li>
+                  <li class="cat-item cat-item-567">
+                    <a href="#">Lechugas</a>
+                  </li>
+                  <li class="cat-item cat-item-568">
+                    <a href="#">Kale</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="cat-item cat-item-547">
+                <a href="#" class="toggle-link">Frutas orgánicas</a>
+                <ul class="children" style="display: none;">
+                  <li class="cat-item cat-item-569">
+                    <a href="#">Manzanas</a>
+                  </li>
+                  <li class="cat-item cat-item-570">
+                    <a href="#">Naranjas</a>
+                  </li>
+                  <li class="cat-item cat-item-571">
+                    <a href="#">Plátanos</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="cat-item cat-item-411 cat-parent">
+                <a href="#" class="toggle-link">Hierbas aromáticas</a>
+                <ul class="children" style="display: none;">
+                  <li class="cat-item cat-item-565">
+                    <a href="#">Vegetales de raíz</a>
+                  </li>
+                  <li class="cat-item cat-item-413">
+                    <a href="#">Plantas medicinales</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="cat-item cat-item-405 cat-parent">
+                <a href="#" class="toggle-link">Huerto en macetas</a>
+                <ul class="children" style="display: none;">
+                  <li class="cat-item cat-item-407">
+                    <a href="#">Plantas suculentas</a>
+                  </li>
+                  <li class="cat-item cat-item-406">
+                    <a href="#">Hierbas culinarias</a>
+                  </li>
+                  <li class="cat-item cat-item-408">
+                    <a href="#">Flores decorativas</a>
+                  </li>
+                  <li class="cat-item cat-item-409">
+                    <a href="#">Sustratos especiales</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9">
+            <div id="image-container" class="image-gallery">
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 style="margin: 10px;">RECETAS SALUDABLES</h1>   
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-bottom: 20px;">
+        <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center text-center">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/pure.jpg" class="card-img-top" alt="...">
+                    <div class="card-footer">
+                        <a class="nav-link" href="#"><small class="text-body-secondary">Pure de papas y coliflor</small></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/pollo.jpg" class="card-img-top" alt="...">
+                    <div class="card-footer">
+                        <a class="nav-link" href="#"><small class="text-body-secondary">Pollo al horno zanahorias glaseadas</small></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/beterragaensalda.jpg" class="card-img-top" alt="...">
+                    <div class="card-footer">
+                        <a class="nav-link" href="#"><small class="text-body-secondary">Ensalada de beterraga asada con quinoa</small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="sh-iconbox">
+            <div class="sh-iconbox-icon">
+                <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div class="sh-iconbox-title">
+                <a href="https://github.com/JhoneiroLove">E-MAIL</a>
+            </div>
+            <div class="sh-iconbox-content">
+                <span>hola@granjaurbana.pe</span>
+            </div>
+        </div>
+    
+        <div class="sh-iconbox">
+            <div class="sh-iconbox-icon">
+                <i class="bi bi-phone-fill"></i>
+            </div>
+            <div class="sh-iconbox-title">
+                <a href="https://github.com/JhoneiroLove">TELÉFONO</a>
+            </div>
+            <div class="sh-iconbox-content">
+                <span>+51 123 456 789</span>
+            </div>
+        </div>
+    
+        <div class="sh-iconbox">
+            <div class="sh-iconbox-icon">
+                <i class="bi bi-clock-fill"></i>
+            </div>
+            <div class="sh-iconbox-title">
+                <a href="https://github.com/JhoneiroLove">HORARIO DE ATENCIÓN</a>
+            </div>
+            <div class="sh-iconbox-content">
+                <span>Lun - Vie: 9:00 AM - 6:00 PM</span><br>
+                <span>Sáb: 9:00 AM - 2:00 PM</span>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <p>&copy; 2023 granjaurbana. Todos los derechos reservados.</p>
+        </div>
+        
+    </footer>
+    
+    
+    <style>
+
+        .product-categories {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .product-categories li {
+            margin-bottom: 10px;
+        }
+
+        .product-categories a {
+            display: block;
+            padding: 8px 15px;
+            background-color: #f8f9fa;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .product-categories a:hover {
+            background-color: #e9ecef;
+        }
+
+        .container {
+            margin-left: 0;
+            padding-left: 0;
+            width: 100%;
+        }
+        
+        .product-categories-container {
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        .bg-custom-green {
+            background-color: #55a963 !important;
+            /* Cambia el valor hexadecimal por el verde deseado */
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+    
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+    
+        .card-footer {
+            background-color: #f8f9fa;
+            border-top: none;
+            padding: 10px;
+        }
+    
+        .card-footer a {
+            text-decoration: none;
+            color: #333;
+        }
+    
+        .card-footer a:hover {
+            color: #6ab04c;
+        }
+    
+        .text-body-secondary {
+            font-size: 14px;
+        }
+    
+        .card-body {
+            margin-left: 40px;
+        }
+
+        .card-text {
+            margin-top: 40px;
+        }
+
+        .btn-primary {
+            background-color: #6ab04c;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+
+        .btn-primary:hover {
+            background-color: #519e3e;
+        }
+
+        .container.align-content-center {
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 40px 0;
+        }
+
+        .container.text-center h5 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .card-footer a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer .sh-iconbox {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .footer .sh-iconbox-icon {
+            margin-bottom: 10px;
+        }
+
+        .footer .sh-iconbox-title a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .footer .sh-iconbox-content {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        hr {
+            height: 1px;
+            background-color: black;
+            border: none;
+            margin: 20px 0;
+        }
+
+        h5 {
+            font-family: 'Raleway', sans-serif!important;
+            font-size: 20px;
+            font-weight: 900!important;
+            color: #363636;
+        }
+
+        h1 {
+            font-family: 'Raleway', sans-serif!important;
+            font-size: 30px;
+            font-weight: 900!important;
+            color: #363636;
+        }
+
+        h3{
+            font-family: 'Raleway', sans-serif!important;
+            font-size: 24px;
+            font-weight: 900!important;
+            color: #363636;
+        }
+        
+        .navbar {
+            border-radius: 0;
+            padding: 10px;
+        }
+        
+        .navbar-brand img {
+            vertical-align: middle;
+        }
+        
+        .navbar-nav .nav-item .nav-link {
+            padding: 10px 15px;
+        }
+        
+        .navbar-nav .nav-item .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .navbar-nav .nav-item .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .form-control {
+            border-radius: 0;
+            border-color: #ffffff;
+        }
+        
+        .input-group-btn .btn {
+            border-radius: 0;
+        }
+        
+        /* Estilos para el botón de búsqueda */
+        .btn-outline-dark {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+        
+        .btn-outline-dark:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+        .btn-outline-dark i {
+            font-size: 18px;
+        }
+        
+        @media (max-width: 991px) {
+            .navbar-nav .nav-item .nav-link {
+                padding: 10px;
+            }
+        }    
+        
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center; /* Agrega esta línea para centrar verticalmente las imágenes */
+            margin-top: 20px;
+        }         
+        
+        .image-item {
+            width: calc(33.33% - 20px); /* Ajusta el tamaño de las imágenes según el espacio disponible */
+            height: auto;
+            margin: 10px;
+            text-align: center;
+        }          
+                
+        .image-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+    
+            .image-item img:hover {
+                transform: scale(1.1);
+        }
+
+        .small-image {
+                width: 220px;
+                height: 220px;
+                object-fit: cover;
+                margin-right: 20px; /* Ajusta el valor según el espaciado horizontal deseado */
+                margin-bottom: 20px; /* Ajusta el valor según el espaciado vertical deseado */
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s;
+        }
+
+        .small-image:hover {
+            transform: scale(1.1);
+        }    
+
+    </style>
+
+    <script>
+
+        const toggleLinks = document.querySelectorAll('.toggle-link');
+        toggleLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const childrenList = link.nextElementSibling;
+            childrenList.style.display = childrenList.style.display === 'none' ? 'block' : 'none';
+            if (childrenList.style.display === 'block') {
+            const imagesContainer = document.getElementById('image-container');
+            imagesContainer.innerHTML = "";
+
+            if (link.textContent === "Hortalizas de hoja verde") {
+                const images = [
+                { name: "Espinacas", src: "/img/Cocer-espinacas.jpg" },
+                { name: "Lechugas", src: "/img/lechuga.jpg" },
+                { name: "Kale", src: "/img/kale.jpg" },
+                { name: "Espinacas", src: "/img/espinaca.jpg" },
+                { name: "Lechugas", src: "/img/lechuga2.jpg" },
+                { name: "Kale", src: "/img/kale2.jpg" }
+                ];
+                images.forEach(image => {
+                const imgElement = document.createElement('img');
+                imgElement.src = image.src;
+                imgElement.alt = image.name;
+                imgElement.classList.add('small-image');
+                const imageItem = document.createElement('div');
+                imageItem.classList.add('image-item');
+                imageItem.appendChild(imgElement);
+                imagesContainer.appendChild(imageItem);
+                });
+            } else if (link.textContent === "Frutas orgánicas") {
+              // Agregar imágenes relacionadas con Frutas orgánicas
+                const images = [
+                { name: "Manzanas", src: "/img/manzana.jpg" },
+                { name: "Naranjas", src: "/img/naranja.jpg" },
+                { name: "Plátanos", src: "/img/platanos.jpg" },
+                { name: "Manzanas", src: "/img/manzanaa.jpg" },
+                { name: "Plátanos", src: "/img/platanos2.jpg" },
+                { name: "Naranjas", src: "/img/naranja-1.jpg" }
+                ];
+            images.forEach(image => {
+                const imgElement = document.createElement('img');
+                imgElement.src = image.src;
+                imgElement.alt = image.name;
+                imgElement.classList.add('small-image');
+                const imageItem = document.createElement('div');
+                imageItem.classList.add('image-item');
+                imageItem.appendChild(imgElement);
+                imagesContainer.appendChild(imageItem);
+                });
+            } else if (link.textContent === "Hierbas aromáticas") {
+              // Agregar imágenes relacionadas con Hierbas aromáticas
+                const images = [
+                { name: "Menta", src: "/img/menta.jpg" },
+                { name: "Zanahoria", src: "/img/zanahoria.jpg" },
+                { name: "Veterraga", src: "/img/veterraga}.jpg" },
+                { name: "Planta", src: "/img/plantamedicinal.jpg" },
+                { name: "Albahaca", src: "/img/albahaca.jpg" },
+                { name: "Planta", src: "/img/plantamedicinal2.webp" }
+                ];
+            images.forEach(image => {
+                const imgElement = document.createElement('img');
+                imgElement.src = image.src;
+                imgElement.alt = image.name;
+                imgElement.classList.add('small-image');
+                const imageItem = document.createElement('div');
+                imageItem.classList.add('image-item');
+                imageItem.appendChild(imgElement);
+                imagesContainer.appendChild(imageItem);
+                });
+            } else if (link.textContent === "Huerto en macetas") {
+              // Agregar imágenes relacionadas con Huerto en macetas
+                const images = [
+                { name: "Cactus", src: "/img/cactus.jpg" },
+                { name: "Suculentas", src: "/img/suculentas.jpg" },
+                { name: "Orquídeas", src: "/img/orquideas.webp" },
+                { name: "Hierbas culinarias", src: "/img/culinaria.jpg" },
+                { name: "Hierbas culinarias", src: "/img/sustratos.jpg" },
+                { name: "Hierbas culinarias", src: "/img/sustratos2.jpg" }
+                ];
+            images.forEach(image => {
+                const imgElement = document.createElement('img');
+                imgElement.src = image.src;
+                imgElement.alt = image.name;
+                imgElement.classList.add('small-image');
+                const imageItem = document.createElement('div');
+                imageItem.classList.add('image-item');
+                imageItem.appendChild(imgElement);
+                imagesContainer.appendChild(imageItem);
+                });
+            }
+            }
+        });
+    });
+
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+crossorigin="anonymous"></script>
+</body>
+
+</html>

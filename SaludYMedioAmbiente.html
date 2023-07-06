@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jhoel Maqui">
+    <meta name="copyright" content="Jhoel Maqui" />
+    <meta name="description" content="Pagina principal">
+    <meta name="keywords" content="granja urbana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <title>Salud y Medio Ambiente</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-green">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="" width="55" height="40">
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">GRANJA URBANA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="SaludYMedioAmbiente.html">Salud y Medio ambiente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactoo.html">Contacto</a>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">
+                    <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                </form>
+            </div>
+            </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 style="margin: 10px;">SALUD Y MEDIO AMBIENTE</h1>
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Salud y Medio Ambiente</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3" style="width: 100%; margin: 16px 0;">
+        <div class="row g-0">
+
+            <div class="col-md-8">
+                <div class="card-body" style="margin: auto;">
+                    <h5 style="text-align: left; margin-left: 40px;">Consumo de Productos Orgánicos</h5>
+                    <p class="card-text" style="margin: 40px;">El consumo de productos orgánicos ha ido en aumento en los últimos años, impulsado por la creciente conciencia sobre la importancia de llevar una alimentación saludable y sostenible. Los productos orgánicos se caracterizan por ser cultivados sin el uso de pesticidas, fertilizantes químicos u organismos modificados genéticamente.
+                        Al elegir productos orgánicos, estamos optando por alimentos de alta calidad nutricional, libres de residuos tóxicos y que respetan el medio ambiente. Estos alimentos son cultivados en armonía con la naturaleza, promoviendo prácticas agrícolas sostenibles que preservan la biodiversidad del suelo y contribuyen a la conservación de los recursos naturales.       
+                        Además de los beneficios para nuestra salud y el medio ambiente, consumir productos orgánicos también apoya a los agricultores locales y a las comunidades rurales. 
+                </div>
+            </div>
+
+            <div class="col-md-4 align-self-left">
+                <div style="margin: 30px; padding-top: auto;">
+                    <img src="img/organico.jpg" class="img-fluid rounded-start mx-auto d-block" alt="..."
+                        style="margin-right: 10px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <style>
+        .contenedor {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 50%;
+        }
+
+        .contenedor figure {
+            position: relative;
+            height: 250px;
+            width: 350px;
+            overflow: hidden;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .contenedor figure img {
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease-out;
+        }
+
+        .contenedor figure .capa {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(102, 222, 57, 0.28);
+            transition: all 500ms ease-out;
+            opacity: 0;
+            visibility: hidden;
+            text-align: center;
+        }
+
+        .contenedor figure:hover>.capa {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .contenedor figure:hover>.capa h3 {
+            margin-top: 70px;
+            margin-bottom: 15px;
+        }
+
+        .contenedor figure .capa h3 {
+            color: #fff;
+            font-weight: 400;
+            margin-bottom: 120px;
+            transition: all 500ms ease-out;
+            margin-top: 20px;
+        }
+
+        .contenedor figure .capa p {
+            color: #fff;
+            font-size: 15px;
+            line-height: 1.5;
+            width: 100%;
+            max-width: 220px;
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .bigConteiner{
+            width: 100%;
+            height: 200px;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+        }
+
+        .uno{
+            grid-row: 1 / 3 ;
+        }
+
+    </style>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 style="text-align: left;">Noticias Relacionadas</h5>
+    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contenedor">
+                                <figure>
+                                    <img src="img/Noticia1.jpeg" alt="">
+                                    <div class="capa">
+                                        <a href="https://gestion.pe/economia/productos-organicos-uva-mango-y-arandanos-camino-a-ser-los-nuevos-productos-estrella-del-mercado-organico-noticia/">
+                                            <h3>Productos orgánicos</h3>
+                                            <p>Uva, mango y arándanos, camino a ser los nuevos productos estrella del mercado orgánico</p>
+                                        </a>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contenedor">
+                                <figure>
+                                    <img src="img/Noticia2.jpeg" alt="">
+                                    <div class="capa">
+                                        <a href="https://gestion.pe/economia/cae-produccion-de-alimentos-organicos-por-alza-de-precios-en-insumos-para-control-de-plagas-noticia/">
+                                            <h3>Control de plagas</h3>
+                                            <p>Cae producción de alimentos orgánicos por alza de precios de insumos para control de plagas</p>
+                                        </a>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contenedor">
+                                <figure>
+                                    <img src="img/Noticia3.jpeg" alt="">
+                                    <div class="capa">
+                                        <a href="https://gestion.pe/economia/demanda-productos-organicos-peruanos-incremento-17-147961-noticia/">
+                                            <h3>Productos orgánicos</h3>
+                                            <p>Demanda de productos orgánicos peruanos se incrementó en 17%</p>
+                                        </a>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <hr>
+
+    <div class="mb-3" style="width: 100%; margin: 16px 0;">
+        <div class="row g-0">
+
+            <div class="col-md-4 align-self-left">
+                <div style="margin: 30px; padding-top: auto;">
+                    <img src="img/pesticidad.jpg" class="img-fluid rounded-start mx-auto d-block" alt="..."
+                        style="margin-right: 10px;">
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card-body" style="margin: auto;">
+                    <h5 style="text-align: left; margin-left: 40px;">Efecto de los Pesticidas</h5>
+                    <p class="card-text" style="margin: 40px;">Los pesticidas son productos químicos utilizados en la agricultura para controlar plagas, enfermedades y malezas en los cultivos. Aunque su objetivo principal es proteger las cosechas, el uso indiscriminado y excesivo de pesticidas puede tener efectos negativos en la salud humana y el medio ambiente.
+
+                        Uno de los principales efectos de los pesticidas es su impacto en la salud. La exposición a estos productos químicos puede provocar problemas respiratorios, dermatológicos, neurológicos e incluso cáncer. Además, se ha demostrado que ciertos pesticidas pueden afectar el sistema endocrino, causando desequilibrios hormonales y problemas de fertilidad.
+                        
+                        El uso de pesticidas también puede tener consecuencias ambientales significativas. 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-md-8" style="width: 100%;">
+        <div class="card-body">
+            <h5 style="text-align: left;">Enlaces de Interés</h5>
+            <div class="card-text">
+                <p><a href="https://organicconsumers.org/">Organic Consumers Association:</a> Una organización sin fines de lucro que se dedica a promover la producción y consumo de alimentos orgánicos y sostenibles.</p>
+                <p><a href="https://www.ewg.org/">Environmental Working Group:</a> Una organización que proporciona información sobre la calidad y seguridad de los alimentos, productos químicos y otros factores ambientales.</p>
+                <p><a href="https://www.organic-center.org/">The Organic Center:</a> Un centro de investigación y educación que se enfoca en los beneficios de la agricultura orgánica para la salud humana y el medio ambiente.</p>
+                <p><a href="https://www.usda.gov/topics/organic">USDA Organic:</a> El sitio web oficial del Departamento de Agricultura de los Estados Unidos (USDA) sobre la certificación orgánica y estándares relacionados.</p>
+                <p><a href="https://www.panna.org/">Pesticide Action Network:</a> Una red internacional que trabaja para eliminar el uso de pesticidas tóxicos y promover alternativas más seguras.</p>
+                <p><a href="https://rodaleinstitute.org/">The Rodale Institute:</a> Una organización de investigación agrícola que se centra en la agricultura regenerativa, incluida la agricultura orgánica.</p>
+                <p><a href="https://www.greenpeace.org/global/">Greenpeace:</a> Una organización ambiental global que aboga por la protección del medio ambiente y promueve prácticas sostenibles en la agricultura y otros sectores.</p>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <footer class="footer">
+        <div class="sh-iconbox">
+            <div class="sh-iconbox-icon">
+                <i class="bi bi-envelope-fill"></i>
+            </div>
+            <div class="sh-iconbox-title">
+                <a href="https://github.com/JhoneiroLove">E-MAIL</a>
+            </div>
+            <div class="sh-iconbox-content">
+                <span>hola@granjaurbana.pe</span>
+            </div>
+        </div>
+
+        <div class="sh-iconbox">
+            <div class="sh-iconbox-icon">
+                <i class="bi bi-phone-fill"></i>
+            </div>
+            <div class="sh-iconbox-title">
+                <a href="https://github.com/JhoneiroLove">TELÉFONO</a>
+            </div>
+            <div class="sh-iconbox-content">
+                <span>+51 123 456 789</span>
+            </div>
+        </div>
+
+        <div class="sh-iconbox">
+            <div class="sh-iconbox-icon">
+                <i class="bi bi-clock-fill"></i>
+            </div>
+            <div class="sh-iconbox-title">
+                <a href="https://github.com/JhoneiroLove">HORARIO DE ATENCIÓN</a>
+            </div>
+            <div class="sh-iconbox-content">
+                <span>Lun - Vie: 9:00 AM - 6:00 PM</span><br>
+                <span>Sáb: 9:00 AM - 2:00 PM</span>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <p>&copy; 2023 granjaurbana. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+    <style type="text/css">
+        @media (max-width: 800px) {
+
+            #content .vc_row_707248823,
+            .sh-footer-template .vc_row_707248823,
+            .sh-header-template .vc_row_707248823 {
+                padding: 60px 0px 60px 0px !important;
+            }
+        }
+    </style>
+
+    <style>
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .card-body {
+            margin-left: 40px;
+        }
+
+        .card-text {
+            margin-top: 40px;
+        }
+
+        .btn-primary {
+            background-color: #6ab04c;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+
+        .btn-primary:hover {
+            background-color: #519e3e;
+        }
+
+        .container.align-content-center {
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 40px 0;
+        }
+
+        .container.text-center h5 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .card-footer a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer .sh-iconbox {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .footer .sh-iconbox-icon {
+            margin-bottom: 10px;
+        }
+
+        .footer .sh-iconbox-title a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .footer .sh-iconbox-content {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        hr {
+            height: 1px;
+            background-color: black;
+            border: none;
+            margin: 20px 0;
+        }
+
+        h5 {
+            font-family: 'Raleway', sans-serif!important;
+            font-size: 20px;
+            font-weight: 900!important;
+            color: #363636;
+        }
+
+        h1 {
+            font-family: 'Raleway', sans-serif!important;
+            font-size: 40px;
+            font-weight: 900!important;
+            color: #363636;
+        }
+
+        h3{
+            font-family: 'Raleway', sans-serif!important;
+            font-size: 24px;
+            font-weight: 900!important;
+            color: #363636;
+        }
+
+        .navbar {
+            border-radius: 0;
+            padding: 10px;
+        }
+        
+        .navbar-brand img {
+            vertical-align: middle;
+        }
+        
+        .navbar-nav .nav-item .nav-link {
+            padding: 10px 15px;
+        }
+        
+        .navbar-nav .nav-item .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .navbar-nav .nav-item .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .form-control {
+            border-radius: 0;
+            border-color: #ffffff;
+        }
+        
+        .input-group-btn .btn {
+            border-radius: 0;
+        }
+        
+        /* Estilos para el botón de búsqueda */
+        .btn-outline-dark {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+        
+        .btn-outline-dark:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+        .btn-outline-dark i {
+            font-size: 18px;
+        }
+        
+        @media (max-width: 991px) {
+            .navbar-nav .nav-item .nav-link {
+                padding: 10px;
+            }
+        }
+
+        .bg-custom-green {
+            background-color: #55a963 !important; /* Cambia el valor hexadecimal por el verde deseado */
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
