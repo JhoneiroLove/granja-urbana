@@ -245,8 +245,8 @@
     <h3 class="container text-center" style="color: #55a963;">Formulario de Reserva de Catering</h3>
     
     <div class="container text-center" style="display: flex;">
-        <div style="border: 1px solid hwb(130 16% 32% / 0.671); padding: 20px; width: 400px;">
-            <div style="border: 1px solid hwb(130 16% 32% / 0.671); padding: 20px; background-color: #55A963;">
+        <div style="border: 1px solid #21792f; padding: 20px; width: 400px;">
+            <div style="border: 1px solid #21792f; padding: 20px; background-color: hwb(153 10% 35%);">
                 <form>
                     <div class="mb-3">
                         <label for="nombreCliente" class="form-label">Nombre del cliente:</label>
@@ -303,20 +303,20 @@
                         <label for="comentarios" class="form-label">Comentarios adicionales:</label>
                         <textarea class="form-control" id="comentarios" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar reserva</button>
+                    <a href="Servicios.html" class="mt-2 btn btn-lg btn-outline-light custom-btn" role="button">Enviar reserva</a>
                 </form>
             </div>
         </div>
         <div style="padding: 20px;">
-            <img src="img/formulario.avif" alt="Imagen" style="width: 460px; height: 900px;">
+            <img src="img/formulario.avif" alt="Imagen" style="width: 500px; height: 900px;">
         </div>
     </div>
 
     <h3 class="container text-center" style="color: #55a963;">Formulario de Reserva Visita Guiada</h3>
 
     <div class="container text-center" style="display: flex;">
-        <div style="border: 1px solid hwb(130 16% 32% / 0.671); padding: 20px; width: 400px;">
-            <div style="border: 1px solid hwb(130 16% 32% / 0.671); padding: 20px; background-color: #55A963;">
+        <div style="border: 1px solid  #21792f; padding: 20px; width: 400px;" !important>
+            <div style="border: 1px solid #21792f; padding: 20px; background-color:hwb(153 10% 35%);" !important>
                 <form>
                     <div class="mb-3">
                         <label for="nombreCliente" class="form-label">Nombre del cliente:</label>
@@ -345,12 +345,12 @@
                         <label for="comentarios" class="form-label">Comentarios adicionales:</label>
                         <textarea class="form-control" id="comentarios" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar reserva</button>
+                    <a href="Servicios.html" class="mt-2 btn btn-lg btn-outline-light custom-btn" role="button">Enviar reserva</a>
                 </form>
             </div>
         </div>
         <div style="padding: 20px;">
-            <img src="img/guiada.jpg" alt="Imagen" style="width: 460px; height: 650px;">
+            <img src="img/guiada.jpg" alt="Imagen" style="width: 460px; height: 720px;">
         </div>
     </div>
     
@@ -433,6 +433,20 @@
             border-radius: 5px;
             cursor: pointer;
             margin-left: auto;
+        }
+
+        .custom-btn {
+            color: #ffffff;
+            background-color: #4a9956;
+            transition: background-color 0.3s;
+        }
+        
+        .custom-btn:hover {
+            background-color: #19bd4a;
+        }
+        
+        .custom-btn:active {
+            background-color: #5eff8d;
         }
 
         .btn-primary:hover {
@@ -538,6 +552,10 @@
             background-color: rgba(255, 255, 255, 0.2);
         }
         
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
         .form-control {
             border-radius: 0;
             border-color: #ffffff;
@@ -569,7 +587,7 @@
         }
 
         .bg-custom-green {
-            background-color: #55a963 !important; /* Cambia el valor hexadecimal por el verde deseado */
+            background-color: #21792f !important; /* Cambia el valor hexadecimal por el verde deseado */
         }
     </style>
 

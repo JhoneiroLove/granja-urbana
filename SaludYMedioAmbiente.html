@@ -84,9 +84,7 @@
             <div class="col-md-8">
                 <div class="card-body" style="margin: auto;">
                     <h5 style="text-align: left; margin-left: 40px;">Consumo de Productos Orgánicos</h5>
-                    <p class="card-text" style="margin: 40px;">El consumo de productos orgánicos ha ido en aumento en los últimos años, impulsado por la creciente conciencia sobre la importancia de llevar una alimentación saludable y sostenible. Los productos orgánicos se caracterizan por ser cultivados sin el uso de pesticidas, fertilizantes químicos u organismos modificados genéticamente.
-                        Al elegir productos orgánicos, estamos optando por alimentos de alta calidad nutricional, libres de residuos tóxicos y que respetan el medio ambiente. Estos alimentos son cultivados en armonía con la naturaleza, promoviendo prácticas agrícolas sostenibles que preservan la biodiversidad del suelo y contribuyen a la conservación de los recursos naturales.       
-                        Además de los beneficios para nuestra salud y el medio ambiente, consumir productos orgánicos también apoya a los agricultores locales y a las comunidades rurales. 
+                    <p class="card-text" style="margin: 40px;">El consumo de productos orgánicos ha aumentado debido a la conciencia sobre una alimentación saludable y sostenible. Estos alimentos son cultivados sin pesticidas, fertilizantes químicos u organismos modificados genéticamente, lo que los hace seguros y respetuosos con el medio ambiente. Al elegir productos orgánicos, optamos por alimentos nutritivos y libres de residuos tóxicos. Además, la agricultura orgánica promueve prácticas sostenibles que preservan la biodiversidad y conservan los recursos naturales. Consumir productos orgánicos también beneficia a los agricultores locales y a las comunidades rurales.</p>
                 </div>
             </div>
 
@@ -106,46 +104,51 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            height: 50%;
+            height: 100%;
         }
-
+        
         .contenedor figure {
             position: relative;
             height: 250px;
-            width: 350px;
+            width: 100%;
             overflow: hidden;
             border-radius: 6px;
             cursor: pointer;
         }
-
+        
         .contenedor figure img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
             transition: all 500ms ease-out;
         }
-
+        
+        .contenedor figure:hover img {
+            filter: brightness(70%);
+        }
+        
         .contenedor figure .capa {
             position: absolute;
             top: 0;
             width: 100%;
             height: 100%;
-            background: rgba(102, 222, 57, 0.28);
+            background: rgba(0, 0, 0, 0.7);
             transition: all 500ms ease-out;
             opacity: 0;
             visibility: hidden;
             text-align: center;
         }
-
-        .contenedor figure:hover>.capa {
+        
+        .contenedor figure:hover > .capa {
             opacity: 1;
             visibility: visible;
         }
-
-        .contenedor figure:hover>.capa h3 {
+        
+        .contenedor figure:hover > .capa h3 {
             margin-top: 70px;
             margin-bottom: 15px;
         }
-
+        
         .contenedor figure .capa h3 {
             color: #fff;
             font-weight: 400;
@@ -153,7 +156,7 @@
             transition: all 500ms ease-out;
             margin-top: 20px;
         }
-
+        
         .contenedor figure .capa p {
             color: #fff;
             font-size: 15px;
@@ -191,7 +194,7 @@
                         <div class="col-md-4">
                             <div class="contenedor">
                                 <figure>
-                                    <img src="img/Noticia1.jpeg" alt="">
+                                    <img src="img/Noticia1.jpeg" alt="" class="img-fluid">
                                     <div class="capa">
                                         <a href="https://gestion.pe/economia/productos-organicos-uva-mango-y-arandanos-camino-a-ser-los-nuevos-productos-estrella-del-mercado-organico-noticia/">
                                             <h3>Productos orgánicos</h3>
@@ -204,7 +207,7 @@
                         <div class="col-md-4">
                             <div class="contenedor">
                                 <figure>
-                                    <img src="img/Noticia2.jpeg" alt="">
+                                    <img src="img/Noticia2.jpeg" alt="" class="img-fluid">
                                     <div class="capa">
                                         <a href="https://gestion.pe/economia/cae-produccion-de-alimentos-organicos-por-alza-de-precios-en-insumos-para-control-de-plagas-noticia/">
                                             <h3>Control de plagas</h3>
@@ -217,7 +220,7 @@
                         <div class="col-md-4">
                             <div class="contenedor">
                                 <figure>
-                                    <img src="img/Noticia3.jpeg" alt="">
+                                    <img src="img/Noticia3.jpeg" alt="" class="img-fluid">
                                     <div class="capa">
                                         <a href="https://gestion.pe/economia/demanda-productos-organicos-peruanos-incremento-17-147961-noticia/">
                                             <h3>Productos orgánicos</h3>
@@ -251,11 +254,7 @@
             <div class="col-md-8">
                 <div class="card-body" style="margin: auto;">
                     <h5 style="text-align: left; margin-left: 40px;">Efecto de los Pesticidas</h5>
-                    <p class="card-text" style="margin: 40px;">Los pesticidas son productos químicos utilizados en la agricultura para controlar plagas, enfermedades y malezas en los cultivos. Aunque su objetivo principal es proteger las cosechas, el uso indiscriminado y excesivo de pesticidas puede tener efectos negativos en la salud humana y el medio ambiente.
-
-                        Uno de los principales efectos de los pesticidas es su impacto en la salud. La exposición a estos productos químicos puede provocar problemas respiratorios, dermatológicos, neurológicos e incluso cáncer. Además, se ha demostrado que ciertos pesticidas pueden afectar el sistema endocrino, causando desequilibrios hormonales y problemas de fertilidad.
-                        
-                        El uso de pesticidas también puede tener consecuencias ambientales significativas. 
+                    <p class="card-text" style="margin: 40px;">El uso indiscriminado de pesticidas en la agricultura puede tener efectos perjudiciales en la salud humana y el medio ambiente. La exposición a estos productos químicos puede provocar problemas respiratorios, neurológicos y cáncer, además de afectar el sistema endocrino y la fertilidad. Asimismo, el uso de pesticidas contribuye a la contaminación ambiental y puede tener consecuencias negativas en la biodiversidad y los ecosistemas. Es importante promover prácticas agrícolas más sostenibles y reducir la dependencia de los pesticidas para proteger nuestra salud y el entorno natural.
                     </p>
                 </div>
             </div>
@@ -463,6 +462,10 @@
         .navbar-nav .nav-item .nav-link.active {
             background-color: rgba(255, 255, 255, 0.2);
         }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
         
         .form-control {
             border-radius: 0;
@@ -495,7 +498,7 @@
         }
 
         .bg-custom-green {
-            background-color: #55a963 !important; /* Cambia el valor hexadecimal por el verde deseado */
+            background-color: #21792f !important; /* Cambia el valor hexadecimal por el verde deseado */
         }
     </style>
 
